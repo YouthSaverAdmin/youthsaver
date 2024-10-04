@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health and Wellness - Page 3</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/wellness.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/youthSaver.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=QU9Tp4qLJu2DMNwtD7%2B8Z64kG3B96FzRgvibvN0fezSPDcHiylhUIc2BtyDYoPmWyg9JFls41ZpkrLzRK%2FVkG7vyW8t%2BiJzNGzAuXq3vWrRSoarelhVY7PqlsU2LrH03sd3qKAoAxu4gi2P78nlCzKy4VDp2n1gIsftPDd%2B846yWiUjoXOdRsCAtyla7oJG%2BxwB71wsOl8Pq0WHKOjUDN7kMHnVIRCM3S7cB58nQwn1mnelPWG8BahXVoLtae9dXfajJzPk%2FUUDMDspp%2B46nDYYVA34%2BDOmnKJhCiKp%2FQmzw%2FNQeuXic2OvGX9iGEU0b3JGGfewzdiHYTsFXGgAezw%3D%3D" type="image/icon type">
+    <style>
+        .navbar-custom{
+            background-color: #14467c;
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: #f9cc48;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-custom bg-gradient" role="navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/youthSaver.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=QU9Tp4qLJu2DMNwtD7%2B8Z64kG3B96FzRgvibvN0fezSPDcHiylhUIc2BtyDYoPmWyg9JFls41ZpkrLzRK%2FVkG7vyW8t%2BiJzNGzAuXq3vWrRSoarelhVY7PqlsU2LrH03sd3qKAoAxu4gi2P78nlCzKy4VDp2n1gIsftPDd%2B846yWiUjoXOdRsCAtyla7oJG%2BxwB71wsOl8Pq0WHKOjUDN7kMHnVIRCM3S7cB58nQwn1mnelPWG8BahXVoLtae9dXfajJzPk%2FUUDMDspp%2B46nDYYVA34%2BDOmnKJhCiKp%2FQmzw%2FNQeuXic2OvGX9iGEU0b3JGGfewzdiHYTsFXGgAezw%3D%3D" alt="a" width="45" height="40">&nbsp;&nbsp;<strong>YOUTH SAVER</strong></a>
+          </div>
+            <ul class="navbar-nav ms-5 mb-5 mb-lg-1 w-50">
+              <li class="nav-item fw-medium">
+                <a class="nav-link active" style="color: #f9cc48; " aria-current="page" href="{{ url_for('index') }}" >ABOUT</a>
+              </li>
+              <li class="nav-item fw-medium">
+                <a class="nav-link active" style="color: #f9cc48" href="{{ url_for('login_page') }}">GET STARTED</a>
+              </li>
+            </ul>
+      </nav>
+   
+        <div class="container">
+            <h1>Mental Health and Wellness</h1>
+            <p>Empowering your mental well-being through knowledge, tips, and resources.</p>
+        </div>
+    </section>
+
+    <div class="container my-5 main-content">
+        <div class="row">
+            <div class="col-md-8">
+                <section class="section mb-4">
+                    <h2>Exercises and Tips</h2>
+                    <div class="food-list">
+                        <div class="food-item">
+                            <h3>Running</h3>
+                            <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/running.jpg?Expires=2030363884&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=XQ0%2B2ijdu2bV6ogtgH7xxH8UWR4ydekMm3gFbGH3T%2Br%2FavuAhYBKRt81as5003sS4h2d4gcFWQxA4VDVA%2BoXQeZutr9NSxS48KrmMZZpd0SHmultmEqYY5qMvsWsjV4nhF3V38VcyENF2KPE1zcPniSQ%2FIY0BGHEA%2Ft196hViL5NgtHEExd2%2FJj%2FcP8HaKGMXdnqPJcWUhd1vY4tWgzE62gfM%2BVpVGcBYDki8YZ1C0r4Y9eCM%2Fb%2FL9BZwTUSLUezWXtERtwxFK45%2BkBTFYR7ffmKC3u3iKy%2Bte3nfm9X0nIwM0KJ6B4BwNhkczB%2FjEcnzvagczBv4DJnn%2BmqoELFaw%3D%3D" alt="Running" class="img-fluid rounded mb-3">
+                            <h4>Tips</h4>
+                            <ul>
+                                <li>1. Start Small: Begin with short distances that you can handle easily. Slowly increase the distance as you get used to running.</li>
+                                <li>2. Warm Up and Cool Down: Do some light exercises before running to warm up your muscles and stretch afterward to help them recover.</li>
+                            </ul>
+                        </div>
+                        <div class="food-item">
+                            <h3>Yoga</h3>
+                            <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/yoga.jpg?Expires=2030363884&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=PnyHmc48H7uNdAHQZC3biWnQNEI6BG6pnU5M0JuUbCGPuoBOQgSEWfgc8cutbyfyEdGGZzKOvJTaU6EEoc6mkBOTX3xo0lCdDnIHBZTu8a%2BsepBI9rhs%2B1Fc9%2F%2BMYOj6QW2ihdInHgr79DGMWiqNScw496I2byJs4i9Pj%2FAk790X27hr0T4uGU2IGhqIcd6lJBAfMW15WvpELXRPnnPHr4SAVR%2BS4ATcqspKErrSKSHgQm0o48pY8SE67mVsXatzfOYVbiTYijcd3B%2Fl4%2BwSTDiJaek%2FzRbxt1U4Y%2BpvqG1j0D2Nqn094scjjcoe%2B7W07TyqmMXmRkALwe5aIHD8jQ%3D%3D" alt="Yoga" class="img-fluid rounded mb-3">
+                            <h4>Tips</h4>
+                            <ul>
+                                <li>1. Breathe Deeply: Focus on your breathing to help calm your mind.</li>
+                                <li>2. Practice Regularly: Try to do yoga a few times a week to get the most benefit.</li>
+                                <li>3. Take It Slow: Move slowly and carefully into each pose to get the full benefit.</li>
+                            </ul>
+                        </div>
+                        <div class="food-item">
+                            <h3>Strength Training</h3>
+                            <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/strength-training.jpg?Expires=2030363884&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=lSQfSvbKPQftxmGiGwfuHyh81KVC%2Bo6lRQFBLZ3MDUtCvgUz9em5HQwWwhlWoqM7q4%2FKFvY8E7BUmQ%2FznycXHYlD7otoalsTMnNrDFmBNQxWlYhshgVA%2F%2F6OMXaccSQ9Uaq5AOaXdPMOcWgAe8tF2MpoPTxcZxA%2FWGzG0pCYxf4zwtPMhT3hCcVv3GW44B%2BhxLioUys%2FKSKqRgofk%2BPZkMJ7pmVgZg9JHVe7KHMY6JdR97Ax4dQBEROaMQ7q%2F%2BZvtw3AfeZTCetrVuqGNc5JhQ0LT3IjGmMLbkWXNI9x8j%2FT09VukzBbKyS6HXdLjc1IETDbeu%2Bt1sr0d7ghNrBZbA%3D%3D" alt="Strength Training" class="img-fluid rounded mb-3">
+                            <h4>Tips</h4>
+                            <ul>
+                                <li>1. Learn the Right Form: Make sure you use the correct form to avoid injuries. You might want to ask a trainer to help you at first.</li>
+                                <li>2. Start Light: Begin with lighter weights and increase them slowly as you get stronger.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="additional-info mt-4">
+                        <p><strong>By adding running, yoga, and strength training to your routine, you can make a big difference in your mental health. These activities help you manage stress, feel happier, think more clearly, and sleep better. This balanced approach not only supports your school performance but also helps you feel better overall. Regular exercise, like running, keeps your body active and your mind sharp. Yoga helps you relax and stay calm. Strength training builds your physical strength, which can improve your confidence and overall well-being.</strong></p>
+                    </div>
+                </section>
+            </div>
+            <aside class="col-md-4 sidebar">
+                <section class="section mb-4">
+                    <h2>DID YOU KNOW?</h2>
+                    <ul>
+                        <li><strong>Did you know that 1 in 5 college students experience mental health issues?</strong> Anxiety and depression are among the most common challenges.</li>
+                        <li><strong>Did you know that academic pressure is a leading cause of stress among students?</strong> Finding a balance between studies and personal life is crucial for mental well-being.</li>
+                        <li><strong>Did you know that financial stress can significantly impact a student's mental health?</strong> Many students struggle with the costs of education, which can exacerbate anxiety and stress.</li>
+                        <li><strong>Did you know that peer support can be incredibly effective?</strong> Connecting with fellow students who understand your experiences can provide significant emotional support.</li>
+                        <li><strong>Did you know that the Philippine Mental Health Act was enacted in 2018?</strong> This act aims to integrate mental health services into the educational system, ensuring better support for students.</li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+    </div>
+
+    <div class="pagination">
+        <a href="{{ url_for('wellness_page2') }}">&laquo;</a>
+        <a href="{{ url_for('wellness_page') }}">1</a>
+        <a href="{{ url_for('wellness_page2') }}">2</a>
+        <a href="{{ url_for('wellness_page3') }}" class="active">3</a>
+        <a href="{{ url_for('wellness_page') }}">&raquo;</a>
+    </div>
+
+    <footer class="footer bg-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Mental Health and Wellness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

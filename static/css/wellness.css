@@ -1,0 +1,241 @@
+/* General body styles */
+body, h1, h2, h3, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    text-align: left; 
+}
+
+body {
+    font-family: 'DM Sans', Arial, sans-serif;
+    background-color: #F8F5EE;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #14467C;
+    color: #fff;
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+nav .navbar-brand {
+    font-size: 1; 
+    display: flex;
+    align-items: center;
+}
+
+nav .navbar-brand img {
+    max-height: 40px; 
+    width: auto;
+    margin-right: 5px;
+}
+
+nav .navbar-nav {
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%;
+}
+
+nav .navbar-nav .nav-item {
+    margin: 0 5px; 
+    text-align: center;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+    font-size: .90rem; 
+    padding: 5px 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .navbar-nav .btn {
+    padding: 5px 10px; 
+    font-size: .90rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .navbar-nav .nav-link i, nav .navbar-nav .btn i {
+    font-size: .90rem; 
+    margin-bottom: -18px; 
+}
+
+/* Hero section styles */
+.hero-section {
+    background: url('images/mental-health-hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-section .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1800px;
+    width: 100%;
+}
+
+.hero-section h1 {
+    font-size: 2.5em; 
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+}
+
+/* Main content and sidebar styles */
+.main-content {
+    display: flex;
+    margin-top: 40px;
+}
+
+.content {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #52B774;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #52B774;
+}
+
+.sidebar h2, .sidebar p, .sidebar ul, .sidebar li {
+    color: #52B774; 
+}
+
+/* Section styles */
+.section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #F9CC48; 
+}
+
+.section h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #14467C; 
+}
+
+.section ul {
+    margin-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+/* Food list styles */
+.food-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; 
+}
+
+.food-item {
+    flex: 1 1 calc(48% - 20px); 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+}
+
+.food-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.food-item .ingredients, .food-item .instructions {
+    text-align: left; 
+}
+
+/* Additional information styles */
+.additional-info {
+    text-align: left; 
+    color: #14467C;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: left; 
+    padding: 20px;
+    background-color: #fff;
+    color: #14467C;
+    margin-top: 40px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.pagination a {
+    color: #14467C;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background-color: #14467C;
+    color: #F9CC48;
+    border: 1px solid #14467C;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #14467C;
+}

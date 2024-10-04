@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/profiles.css') }}">
+</head>
+<body>
+    <h1>Student Profiles</h1>
+    <input type="text" id="searchBox" placeholder="Search profiles" oninput="filterProfiles()">
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Student not found.</p>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Middle Initial</th>
+                <th>Surname</th>
+                <th>Birth Date</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Student Number</th>
+                <th>Username</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="profilesTable">
+            {% for profile in profiles %}
+            <tr class="profile-row" id="profile_{{ profile._id }}">
+                <td>{{ profile.first_name }}</td>
+                <td>{{ profile.middle_initial }}</td>
+                <td>{{ profile.surname }}</td>
+                <td>{{ profile.birth_date }}</td>
+                <td>{{ profile.gender }}</td>
+                <td>{{ profile.address }}</td>
+                <td>{{ profile.gmail }}</td>
+                <td>{{ profile.student_number }}</td>
+                <td>{{ profile.username }}</td>
+                <td>
+                    <button onclick="toggleForm('{{ profile._id }}')" class="update-button">Update</button>
+                </td>
+            </tr>
+            <tr id="form_{{ profile._id }}" style="display: none;" class="update-form">
+                <td colspan="10">
+                    <form action="/update_profile" method="post">
+                        <input type="hidden" name="profile_id" value="{{ profile._id }}">
+                        <input type="text" name="first_name" placeholder="First Name" value="{{ profile.first_name }}">
+                        <input type="text" name="middle_initial" placeholder="Middle Initial" value="{{ profile.middle_initial }}">
+                        <input type="text" name="surname" placeholder="Surname" value="{{ profile.surname }}">
+                        <input type="date" name="birth_date" placeholder="Birth Date" value="{{ profile.birth_date }}">
+                        <input type="text" name="gender" placeholder="Gender" value="{{ profile.gender }}">
+                        <input type="text" name="address" placeholder="Address" value="{{ profile.address }}">
+                        <input type="email" name="gmail" placeholder="Email" value="{{ profile.gmail }}">
+                        <input type="text" name="student_number" placeholder="Student Number" value="{{ profile.student_number }}">
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+  <button id="adminBackButton" onclick="location.href='/back_to_admin'" class="update-button">Back to Admin Page</button>
+    <script>
+        function toggleForm(profileId) {
+            const form = document.getElementById('form_' + profileId);
+            form.style.display = form.style.display === 'none' ? 'table-row' : 'none';
+        }
+
+        function filterProfiles() {
+            var searchInput = document.getElementById('searchBox').value.toLowerCase();
+            var table = document.getElementById('profilesTable');
+            var rows = table.getElementsByClassName('profile-row');
+            var noResultsModal = document.getElementById('myModal');
+            var found = false;
+
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                var name = row.cells[0].textContent.toLowerCase();
+                var email = row.cells[6].textContent.toLowerCase();
+                var studentNumber = row.cells[7].textContent.toLowerCase();
+
+                if (name.includes(searchInput) || email.includes(searchInput) || studentNumber.includes(searchInput)) {
+                    row.style.display = '';
+                    document.getElementById('form_' + row.id.split('_')[1]).style.display = 'none'; // Hide the form row if visible
+                    found = true;
+                } else {
+                    row.style.display = 'none';
+                }
+            }
+
+            if (!found) {
+                setTimeout(function() {
+                    noResultsModal.style.display = 'block';
+                }, 700); // 700 milliseconds delay
+            } else {
+                noResultsModal.style.display = 'none';
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

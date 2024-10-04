@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Mental Wellness - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/wellness_student.css') }}">
+    <link rel="icon" href="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/youthSaver.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=QU9Tp4qLJu2DMNwtD7%2B8Z64kG3B96FzRgvibvN0fezSPDcHiylhUIc2BtyDYoPmWyg9JFls41ZpkrLzRK%2FVkG7vyW8t%2BiJzNGzAuXq3vWrRSoarelhVY7PqlsU2LrH03sd3qKAoAxu4gi2P78nlCzKy4VDp2n1gIsftPDd%2B846yWiUjoXOdRsCAtyla7oJG%2BxwB71wsOl8Pq0WHKOjUDN7kMHnVIRCM3S7cB58nQwn1mnelPWG8BahXVoLtae9dXfajJzPk%2FUUDMDspp%2B46nDYYVA34%2BDOmnKJhCiKp%2FQmzw%2FNQeuXic2OvGX9iGEU0b3JGGfewzdiHYTsFXGgAezw%3D%3D" type="image/icon type">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Student Mental Wellness</h1>
+            <nav>
+                <ul>
+                    <li><a href="/back_to_student">Back</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tips">Wellness Tips</a></li>
+                    <li><a href="#exercises">Interactive Exercises</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="welcome-student">
+        <section id="home" class="dashboard-section">
+            <h2>Welcome, Student</h2>
+            <p>Your mental wellness is our priority. Explore tips, exercises, and resources to support your journey.</p>
+            
+    
+        </section>
+    </div>
+
+    <section id="tips" class="dashboard-section">
+        <h2>Wellness Tips</h2>
+        <div class="tips-container">
+            <div class="tip">
+                <h3>Stay Organized</h3>
+                <p>Keep a planner to manage your assignments and deadlines efficiently.</p>
+            </div>
+            <div class="tip">
+                <h3>Take Breaks</h3>
+                <p>Incorporate short breaks between study sessions to avoid burnout.</p>
+            </div>
+            <div class="tip">
+                <h3>Connect with Peers</h3>
+                <p>Maintain a support system by connecting with classmates and friends regularly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="exercises" class="dashboard-section">
+        <h2>Interactive Exercises</h2>
+        <div class="exercise-wrapper">
+            <div class="exercise-content">
+                <button id="exercise-button" class="animated-button">Start Exercise</button>
+                <div id="exercise-output" class="exercise-output"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="dashboard-section">
+        <h2>Resources</h2>
+        <div class="resources-container">
+            <div class="resource">
+                <h3>Campus Counseling</h3>
+                <p>Find support and counseling services available on campus.</p>
+            </div>
+            <div class="resource">
+                <h3>Online Support Groups</h3>
+                <p>Join online communities and support groups for mental health.</p>
+            </div>
+            <div class="resource">
+                <h3>Mental Health Apps</h3>
+                <p>Explore apps designed to help with meditation, relaxation, and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="dashboard-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/wellness_student.js') }}"></script>
+</body>
+</html>

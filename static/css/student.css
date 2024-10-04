@@ -1,0 +1,357 @@
+#content {
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 80px;
+  margin-left: 270px;
+  
+}
+table {
+  width: 125%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+#buttonReport{
+  margin-top: 10px;
+  background-color: #14467C;
+  color: white;
+  padding: 10px;
+  border: none;
+  position: relative;
+  margin-left: 0px;
+}
+
+#buttonSubmit{
+  margin-top: 10px;
+  background-color: #45a049;
+  color: white;
+  padding: 10px;
+  border: none;
+  position: relative;
+  margin-left: 0px;
+}
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.navbar-custom {
+  background-color: #377488;
+
+}
+
+.navbar-brand {
+  color: #ffffff; /* White color for brand */
+  font-size: 1.5rem;
+}
+
+.navbar-brand img {
+  vertical-align: middle;
+}
+
+.nav-link {
+  color: #ffffff !important; /* White color for links */
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #ffd700; /* Gold on hover */
+}
+
+.dropdown-toggle::after {
+  display: none; /* Hide default dropdown arrow */
+}
+
+.dropdown-menu {
+  background: linear-gradient(to right, #4b4e6d, #2b5876); /* Gradient background for dropdown menu */
+}
+
+.dropdown-item {
+  color: #ffffff; /* White text color */
+}
+
+.dropdown-item:hover {
+  background-color: #5c6bc0; /* Dark blue background on hover */
+}
+
+.btn-outline-secondary {
+  color: #1e90ff; /* Dodger blue for button text */
+  border-color: #1e90ff; /* Dodger blue border color */
+}
+
+.btn-outline-secondary:hover {
+  color: #ffffff; /* White text color on hover */
+  background-color: #1e90ff; /* Dodger blue background on hover */
+}
+
+.btn-danger {
+  background-color: #ff4500; /* Orange red background for danger button */
+  border-color: #ff4500; /* Orange red border color */
+}
+
+.btn-danger:hover {
+  background-color: #ff6347; /* Lighter red on hover */
+  border-color: #ff6347;
+}
+
+/* Sidebar styles */
+
+.sidebar {
+  background: linear-gradient(to bottom, #205679, #723264); /* Gradient background for sidebar */
+  color: #ffffff; /* White text color */
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Scrollable sidebar */
+  box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Soft shadow */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+#optionList {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; /* Center text within list */
+}
+
+.list-group-item {
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.list-group-item:hover {
+  background-color: #5c6bc0; /* Dark blue on hover */
+}
+
+
+/* Notification dropdown */
+#notificationDropdown {
+  min-width: 300px;
+  max-width: 300px;
+  overflow-y: auto;
+  color: black; /* Adjust as needed */
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ccc; /* Light border */
+  box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Soft shadow */
+}
+
+
+
+.notification-item {
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.notification-item:hover {
+  background-color: #5c6bc0; /* Dark blue on hover */
+}
+
+.notification-item.read {
+  background-color: #f8f9fa; /* Light gray background for read notifications */
+  color: #6c757d; /* Gray text color for read notifications */
+}
+
+.notification-item.unread {
+  background-color: #ffc107; /* Yellow background for unread notifications */
+  color: #343a40; /* Dark text color for unread notifications */
+}
+
+
+
+
+/* Notification dropdown */
+#notificationDropdown {
+  min-width: 300px;
+  max-width: 300px;
+  overflow-y: auto;
+  color: black; /* Adjust as needed */
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ccc; /* Light border */
+  box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Soft shadow */
+}
+
+
+
+
+.notification-item {
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.notification-item:hover {
+  background-color: #5c6bc0; /* Dark blue on hover */
+}
+
+.notification-item.read {
+  background-color: #f8f9fa; /* Light gray background for read notifications */
+  color: #6c757d; /* Gray text color for read notifications */
+}
+
+.notification-item.unread {
+  background-color: #ffc107; /* Yellow background for unread notifications */
+  color: #343a40; /* Dark text color for unread notifications */
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #000000; /* Dark blue label text */
+}
+
+input[type="date"],
+input[type="text"],
+select {
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px;
+  background-color: #f2f2f2; /* Light grey background */
+  color: #333; /* Dark grey text */
+  transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus,
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #3498db; /* Blue border on focus */
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #3498db; /* Blue button background */
+  border: none;
+  border-radius: 4px;
+  color: #fff; /* White button text */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+
+h2 {
+  color: #2c3e50; /* Dark blue heading text */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f0ad4e; /* Example background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for a subtle effect */
+  z-index: 1000; /* Ensure the notification stays on top of other content */
+  transition: opacity 0.3s ease-in-out; /* Optional: Fade in/out animation */
+}
+
+.notification:hover {
+  opacity: 0.9; /* Optional: Reduce opacity on hover */
+}
+
+
+/* Right sidebar styles */
+.rightsiderbar {
+  position: fixed;
+  top: 130px;
+  right: 50px;
+  width: 300px;
+  height: 500px;
+  background-color: #4a90e2;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  border-radius: 10%;
+  color: #fff; /* Set text color to white */
+}
+
+.additional-contacts {
+  width: 100%;
+  text-align: left;
+}
+
+.additional-contacts h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.additional-contacts-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additional-contact-item {
+  padding: 8px 0;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #fff; /* White text color for anchor tags */
+
+}
+
+.case-details {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.read-report {
+  background-color: #f8f9fa; /* Light gray background for read reports */
+  color: #000000; /* Gray text color for read reports */
+}
+
+.unread-report {
+  background-color: #14467C; /* Yellow background for unread reports */
+  color: whitesmoke; /* Dark text color for unread reports */
+}

@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/youth.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=WSzi4z7TehBT5WZVuHTteFOjS%2F%2Fr0NI5YhhAiZTeXK2cFkK3VO9y5mlr5CXEYKdt4tSPXujoY8HzpTmsZzeMPZfZcKhb9F7L9R9Jt%2BFM31ee2Sxq0hgqty2V2oYtP1av9HHoRi992acdS6cTckyA8zUnBANOjDVMWPGiY9EcV7bp7qs6kfZtOKOM%2FQ2ThBcoq4eIp9%2F2h2gBrBcS3%2FGF6uhYemtUUYsMWOokJrKGgaw7IX2K0mrRuvvan0vD3JIWOXMmB41OaNM5fk0J9y68i%2Fcv0Kx9uYM0PWAaQghRJlewrpePeWa50i%2BsjWS%2BA%2BMvtz7QUWFKRIqx96LQo%2FUHmw%3D%3D" type="image/icon type">
+    <style>
+        .navbar-custom{
+            background-color: #14467c;
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: #f9cc48;
+        }
+    </style>
+    <title>Youth Saver</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom bg-gradient sticky-top" role="navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/youthSaver.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=QU9Tp4qLJu2DMNwtD7%2B8Z64kG3B96FzRgvibvN0fezSPDcHiylhUIc2BtyDYoPmWyg9JFls41ZpkrLzRK%2FVkG7vyW8t%2BiJzNGzAuXq3vWrRSoarelhVY7PqlsU2LrH03sd3qKAoAxu4gi2P78nlCzKy4VDp2n1gIsftPDd%2B846yWiUjoXOdRsCAtyla7oJG%2BxwB71wsOl8Pq0WHKOjUDN7kMHnVIRCM3S7cB58nQwn1mnelPWG8BahXVoLtae9dXfajJzPk%2FUUDMDspp%2B46nDYYVA34%2BDOmnKJhCiKp%2FQmzw%2FNQeuXic2OvGX9iGEU0b3JGGfewzdiHYTsFXGgAezw%3D%3D" alt="a" width="45" height="40">
+        &nbsp;&nbsp;<strong>YOUTH SAVER</strong>
+      </a>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- Adjusted classes to ms-auto to move list to the left -->
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #f9cc48;" aria-current="page" href="{{ url_for('wellness_page') }}">WELLNESS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #f9cc48;" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #f9cc48;" href="#nav">FEATURES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #f9cc48;" href="#team">TEAM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #f9cc48;" href="#contact">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #f9cc48;" href="{{ url_for('login_page') }}">GET STARTED</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/1stSlide.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=JxIZKk7%2FjcnkcvSdyKejqg6E%2BuCwLFMUXospq42lH9%2B%2B8udLXBvnj6p%2FyhGrv8THDVERPLPKRQnKMATd6G6pkdT4gF92K%2BCqBP4zrXJk8x8q4BtYkmQcHofbtTGqdw2zY2h2flzAWSdVFfig6IFvxq23V29F34WpWZyrkrlx8k1fBwQvC4y4T7W4weQmdCJdebIEIlIoy9G4F9CZ%2FU6Maw9gjzu9PwKA8Gd1I2ZHyfD%2FLau%2B75dwzTHOBliDeWeenKJVUPa2Lbp6FazA3lab1MODP45tPfq8ki4et%2FvaMyo5cgVdmRrDosuVks%2FnGw1P6yRQR2ex5WoklVQErdzixQ%3D%3D" class="img-fluid d-block w-70" alt="header">
+          </div>
+          <div class="carousel-item">
+            <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/ReportSlide.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=AjSYMhPnJ08DZ46ak%2Bkavf6l9Gq845be%2FhyyTDX9ul8RAzpSxEMeHaGb1jIkx%2BFVaKI8SMP323v7JTseVWUQJKlWKkFAg3G2OyI49zIbiMLAotSEsevnOiVz4keHdWTeGuztPRN4F%2BlG5VQo07wjXmacA3GGNDgHF34k5DmdgGlFUV7klWx6h%2BGWEXEmS%2F2ziZq1ak%2By9z0m4BFvoC%2F3TtgZflAAK0VUbPKe%2FzdNAiDF37vWTVRkmeN0%2BecmLCd8u3gHOExSSgHJrCJ0BXHuGGSaLjpUhz0CMd9SXKpJKTy66QOmV1wAHwRHElOwqc6h3SlayOTHtvT%2BHRU7P8b5QA%3D%3D" class="img-fluid d-block w-70" alt="header">
+          </div>
+          <br id="nav">
+          <div class="carousel-item">
+            <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/ResponseSlide.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=e%2Ffb4vkl5paI2K1PY8LKTplNo1G5Qw3yhXR%2BiXASPvLbHzOwGDp9wiogx1OsmCSy03KnGFAClXV2IbAD5uJCNVNpvYYFo349fY0Xoc4bPqSqKpcHY9F5IBpE5bLIq62B24LyIhQiWSPYNsFgeWkO7HuUpH7Pt0AcoxJxc2vqj4m52zjYiCGXTOOePUN5nvl%2B9Ijtd08vb3QQrJtRnWMuGIe%2BojzYc9YxlRtCIGo1%2B%2BucxOXifYbcN1AG3Gjb1tPWo6gXkFVF9T6GaU5tZmnRfv%2BPBsoNcz4LnHJVQCTliv7MuPRTd2%2Fsr%2B2a3TZKZ4o497XIftuXBu10DlRUSZnzUQ%3D%3D" class="img-fluid d-block w-70" alt="header">
+          </div>
+          <div class="carousel-item">
+            <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/WellnessSlide.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=KVZHdYJ7mN74PyWSh%2B5c9hruamd%2FciA9hBdP6uL1lGgxEuI33E6QaG5A5j8yzyUMwykFpt5kBwE85TdfwMpF9yCvF9Zx3LgffWKqyqf3jEH2echDzX35hqxcRHH0x6W%2BdKBXRRpGlA1qOg%2F6tThhWqAQFqvc4aDp9XJ5AUZ2fcYAXhZXOQr7FT%2BI9JW47acsCUisgl9haIrOq4bNU%2FCY24JT1ps1FY7Kd%2BnQIbuXnckroo%2BI82G9BUWkUiBwrksS7kH8bY4gWuo9uUDyHwD3DdPKYJxr0QWDMat9avMrOubxKuWWwMJyGfQw5f%2FDWaG2CJy5B3x9StcdVUfXMe5czA%3D%3D" class="img-fluid d-block w-70" alt="header">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+        <div>
+        <!--Right picture inside a div-->
+            <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/front-image.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=bnTPHfvWXqeMFNRHPlJ5WccDZKrPmnXqtDbqkwTVhFrJoAJDMAfGVqvhOdozF4PEmGb4ikGTfhppZ4z8hwVWWkxykspWJg0n4ZEmEKSyN%2FDuZYQh%2BEJh4sAxUap%2BYhinlReUvWGAx6bxFVEKIasEBOHFSmgXZ8BH9ABmZp9lFuQCz6lkI1FaBz2z4ZgtgX9u5OBFsAncV0jEqciGU0swl8DMdSDWamibGnoSB%2FxFLsDm6h%2F9SG2H6tcbV6lI480s0luFGODECkiiicX9MCtLsr7WAI3J%2BmaqlXIMxSJWZzTZiPwobf%2BTP7Hi48hv73MWjsiGzBRx9HJs8Hnqc%2BqCIQ%3D%3D" class="float-end pe-5" alt="">
+        </div>
+        <!--Left text beside the previous picture inside div.-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid ps-5 pe-5">
+            <div class="card text-center border-light w-50 py-4">           
+                <div class="card-body">
+                    <h5 class="card-title">YOUTH SAVER</h5>
+                    <br>
+                    <p class="card-text">Reporting and resolution for safer school to ensure the mental wellness of a student attending the school without any problem.</p>
+                    <br>
+                    <button class="btn btn-warning bg-gradient" style="color: #14467c;" type="{{ url_for('login_page') }}">Get started</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br id="about">
+        <br>
+        <br>
+        <br>
+        <br>
+                <!--About Section-->
+                <div class="container-fluid">
+                  <h2 class="text-center">ABOUT THE WEBSITE</h2>
+                  <p class="text-center">Key features of our website</p>
+                </div>
+                <br>
+                <div class="container-fluid mt-3">
+                  <div class="row text-center mx-5">
+                    <div class="col p-3 ">
+                      <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/responsive.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=LdXuhfSQELHpXzAY6f5%2BntJIQMB7A56LL3JBftdxMaF22D%2FHh884z5Wo0v2xb4TKh%2FiTyZdq4%2FkT5%2F5FLsF5esnn58gcCeI9BmrNYE6AD0%2FaRqkMmFilFaJidvYrftA3EBO%2FBHOsf8%2FSsIjoA3fNl0I1bxvCAGo3LhiaqsmHstFy2K5xptbPBE6ZLzxOJjzbY23EIUy74c2PjbE8gIqQ0fq%2FS1Qej1mvqbO8Qh1T42G1mw10qE9ecTxOeQ3FgxNpkXhQHpMg4Dl6R9u3e6lXxNA5em4VV0g7p%2Fp28ZemISvZSRiiPoBLaCaJKo4ZWo8O01We0kFJJ8L7rZXj6zPKmw%3D%3D" alt="" width="90" height="90">
+                      <br>
+                      <br>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <div class="col p-3 ">
+                      <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/passion.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=SYs6nSzDNwHjkjOUGYyx5Y%2FKuffraoI%2BrjcxslTNn4qDv8RZy8X7WdnDYc099Wp2PMHGJfrRH%2BrlTDZjXw5FljJzhcLIw%2Bst%2FgLjyH9s6ZDUtJwhBpNvWpo97kepq%2FXSpdebe3daVUcUyh53uq0Wtf6%2B1zQjfgiGt8lwSGsiU703ujcpOw12EWKTSjK9Wfg73Z4k2KqWr8pUZ0joUS8Wx9jv5HU7D8Cq3q7G%2BWfxpHGzN1H3W839vXUcccSx0Arw9dih5crZkvCW51get3H8owy6cbCRYo%2BZvT%2F4M8URcYQqYpDuJQK0gY3a%2B7BV5d9jjM8wpmchrokwWd9dOwl8pA%3D%3D" alt="" width="90" height="90">
+                      <br>
+                      <br>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <div class="col p-3 ">
+                      <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/layout.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=kTsNv%2FFsPKWAq55vyqYqtYaULzXOBu7n48f%2FtYW1FAvoPhLCkW8qg5m1Nc77tLH%2FFYTC8gC57uQQ0OOM2VemZhLjHUWTYNxO9ssZVVE2CE8cL4cMI%2Fk8zPLlRlTTuWRcmq%2FHPXApWt%2BvUX1woQPBms1QJXIt7i5qB9Grir4EVBg80cg4KUaTkq9E9brdvvEQUh%2BWiHsvvLRWrGBzUpCohku29LQA4lpx5hJePpnqswvWb%2FDwKsM5kie%2F0%2BlGt3DYM72eqhG6UJpVMh4APgBaJzmuRvCT38KWRZj64dGmS0gjhOHAR9K4Xcfcm%2BTxyg17wiLwni0xTJd8P23JYv1L8A%3D%3D" alt="" width="90" height="90">
+                      <br>
+                      <br>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                      </div>
+                  </div>
+                </div>
+              <br id="team">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <h2 class="text-center">THE TEAM</h2>
+              <p class="text-center">From BSCS 2-5, Group 3</p>
+              <br>
+              <h4 class="text-center">BACK END</h4>
+              <div class="container-fluid mt-3">
+                <div class="row text-center mx-5">
+                  <div class="col p-5 ">
+                    <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/kurt.jpg?Expires=2030971380&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=oXuNzkhS9moCuspz2TLywv7KZ2X%2Foc1e2pmzNGkXuyWPolOQnN3wJ9NXdJoZyYjzKL7y%2F50foe6opDTZgPNsNLW3%2FuqoZ36ZF17Ia6XhNAPEGB26PKEFenqbAERF5qt6I7ajLdC%2B%2BicFYHe2Gn%2BhcXcrNZD47vhfgi%2F7tUxkciU0QmGJPH9sO8wREDHG%2FtdRYDjoO%2BNHTbA6eLE71mDu%2BapNozNfZzNEHtgKvcDe9WMdGpW7X%2FVvwSPG3g9pIz%2BrYG8tkHO0YEYGP%2B%2Bx67cH11wx9fIzwFiNbZgU1F28R85ONlhRdyDCqS2VvcI6jpTJfFtLaQqTvHaj5qI2AuKUIw%3D%3D" alt="" width="90" height="90">
+                    <br>
+                    <br>
+                    <h4>Kurt Chester Manuel</h4>
+                    <p>Backend that connected all the function from the front end to the database </p>
+                    <p>Someone who works behind the scenes, and the one who made the impossible into feasible
+                      the connector and the supervisor.</p>
+                  </div>
+                  <div class="col p-5 ">
+                    <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/brant.jpg?Expires=2030971380&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=pVSclojd8X6Wx1x3PV750k%2FoGESw6w6O9zKN1b41RNYTie03sUYNryXCKItQpkowMBNc1Wiu4FkWDsOAzeY0GLqhN%2FPGB%2FwN%2B%2Fksg1vqYME2NtpugcD7nPXbj1kCrcDNjPRM5ml9zkkvl%2BZGQyscdD%2FEsEQ2648QyE9j7EhpOKijrNyHAnbYWjVUPIN14E%2FPgSuoVKQ4K26hlslQtYE%2FzcnnAxFv9GNdflCUGngYkD3FOZeckSeRQBdgWRPjmG5T4HAEf%2FF7LPAKrTJLu4ALm4tbkqZotip27o1x30TgudV%2BThj3VNCBFW8kRQsrJEtFD%2B%2Fs2mcKYMSksCB6yJABFw%3D%3D" alt="" width="90" height="90">
+                    <br>
+                    <br>
+                    <h4>Brant Yadi Cordova</h4>
+                    <p>Assistant of the backend the one who helped the backed behind the scenes.</p>
+                  </div>
+                </div>
+                <h4 class="text-center">FRONT END</h4>
+                <div class="container-fluid mt-3">
+                  <div class="row text-center mx-5">
+                    <div class="col p-5 ">
+                      <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/baby.jpg?Expires=2030971380&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=HB1oNK94vDGQTa%2BHFWZAIlalnx%2B73u9NHuoLc%2F2FaNAaIehNdt9QKKWumdG5xHkB%2Bv%2BzfVDNQ7HznzW3KnDMPQOCg%2FoX9xzVex1YfEcByf1W%2BVOg%2Fp%2BERiIu4PF3VJRsnp86a5Vvo8REhyEJTMbwQb8iLzuync9iN4ZwxvFwALS3qIEh%2FKr5wL%2B89pFV87W4%2BRm6j6cYo5WhUouBv4FWESkhMd%2Fh1vYc5DkiP5D9uSp2ZcJHHDSfun66uum2trqYQYmtyLKaD6hsfJQRQfbJCF9ZJxCEGZUL7tFzLp75056IPmPiI5tCoND7f0T77xUbf6K7avhUArOlV9g9LGE10g%3D%3D" alt="" width="90" height="90">
+                      <br>
+                      <br>
+                      <h4>Jhoelly Gwynne Dollete</h4>
+                      <p>The head of front end who designed the whole system and the one who</p>
+                      <p>started the first design and come up with the whole system design
+                        and also the person who created the login pages, index pages, student pages, and etc .</p>
+                    </div>
+                    <div class="col p-5 ">
+                      <img src="..." alt="" width="90" height="90">
+                      <br>
+                      <br>
+                      <h4>Leonard Gatpolintan</h4>
+                      <p>The front end that gives ideas on how to make the system look beautiful.</p>
+                    </div>
+                    <div class="col p-5 ">
+                      <img src="..." alt="" width="90" height="90">
+                      <br>
+                      <br>
+                      <h4>Hazel Baldava</h4>
+                      <p>Support front end or the data that collected all the necessary informations for both the fron and backend also the creator of wellness front end in the home page.</p>
+                    </div>
+                    <div class="col p-5 ">
+                      <img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/aldrin.jpg?Expires=2030971380&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=om0TkDVNXcaLSfQvdao%2FRAZEl6yyf%2BWkmUqQs1i6lpeg78CLi5tbp%2Bqo0%2BCBgz6YAb0Jv51%2B2SMedtseVxEZpxIdKypHNZzJ1qWLkHenYVLPj9EswWwPmn%2Fxm9yzqnqHqlsMdCgOtAhI5tpkF10T5UPZj9ivbNm0H076kdmFozlQFQrbXENWenHUwubM4A%2FkqM4fhBlMOXZgvBvJT9IUdOzbEaPeP97WDhkW5dbj1R%2Blr8LA5tmJYmSprdRmPb3Wev4D31Cn7L8ZNsM2EyWJ59qAlAh7rc2uKLLAxFpmBzhLMyHWO8q%2F3NElEL%2FVq71RCtnR9Vv4vcTERQ%2FyLnHTnw%3D%3D" alt="" width="90" height="90">
+                      <br>
+                      <br>
+                      <h4>Aldrin Lumpot</h4>
+                      <p>the front end who gave the ideas for the login pages and the admin pages and also helped with implementation.</p>
+                    </div>
+                  </div>
+                  <h4 class="text-center">WELLNESS</h4>
+                  <div class="container-fluid mt-3">
+                    <div class="row text-center mx-5">
+                      <div class="col p-5 ">
+                        <img src="..." alt="" width="90" height="90">
+                        <br>
+                        <br>
+                        <h4>John Vincent Ariño</h4>
+                        <p>the wellness front end .</p>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      <br>
+                      <br>
+                      <br>
+                      <div class="container-fluid bg-gradient" style="background-color: #14467c;" id="contact">
+                        <br>
+                        <br>
+                        <p class="text-center">Contact us!                     <a href="youth.saver@gmail.com">youth.saver@gmail.com</a></p>
+                        <br>
+                      </div>
+</body>
+</html>

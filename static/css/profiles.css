@@ -1,0 +1,120 @@
+/* profiles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: black
+}
+
+#searchBox {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.update-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.update-button:hover {
+    background-color: #45a049;
+}
+
+.update-form {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.update-form input, .update-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: calc(100% - 22px);
+}
+
+.update-form button {
+    background-color: #14467C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.update-form button:hover {
+    background-color: #45a049;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: whitesmoke;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 4px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#adminBackButton{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    background-color: #14467C;
+}
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/wellness.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/youthSaver.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=QU9Tp4qLJu2DMNwtD7%2B8Z64kG3B96FzRgvibvN0fezSPDcHiylhUIc2BtyDYoPmWyg9JFls41ZpkrLzRK%2FVkG7vyW8t%2BiJzNGzAuXq3vWrRSoarelhVY7PqlsU2LrH03sd3qKAoAxu4gi2P78nlCzKy4VDp2n1gIsftPDd%2B846yWiUjoXOdRsCAtyla7oJG%2BxwB71wsOl8Pq0WHKOjUDN7kMHnVIRCM3S7cB58nQwn1mnelPWG8BahXVoLtae9dXfajJzPk%2FUUDMDspp%2B46nDYYVA34%2BDOmnKJhCiKp%2FQmzw%2FNQeuXic2OvGX9iGEU0b3JGGfewzdiHYTsFXGgAezw%3D%3D" type="image/icon type">
+    <style>
+        .navbar-custom{
+            background-color: #14467c;
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: #f9cc48;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health and Wellness</title>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-custom bg-gradient" role="navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="https://storage.googleapis.com/web-pictures-13450.appspot.com/pictures/youthSaver.png?Expires=2030360809&GoogleAccessId=firebase-adminsdk-vx7yk%40web-pictures-13450.iam.gserviceaccount.com&Signature=QU9Tp4qLJu2DMNwtD7%2B8Z64kG3B96FzRgvibvN0fezSPDcHiylhUIc2BtyDYoPmWyg9JFls41ZpkrLzRK%2FVkG7vyW8t%2BiJzNGzAuXq3vWrRSoarelhVY7PqlsU2LrH03sd3qKAoAxu4gi2P78nlCzKy4VDp2n1gIsftPDd%2B846yWiUjoXOdRsCAtyla7oJG%2BxwB71wsOl8Pq0WHKOjUDN7kMHnVIRCM3S7cB58nQwn1mnelPWG8BahXVoLtae9dXfajJzPk%2FUUDMDspp%2B46nDYYVA34%2BDOmnKJhCiKp%2FQmzw%2FNQeuXic2OvGX9iGEU0b3JGGfewzdiHYTsFXGgAezw%3D%3D" alt="a" width="45" height="40">&nbsp;&nbsp;<strong>YOUTH SAVER</strong></a>
+          </div>
+            <ul class="navbar-nav ms-5 mb-5 mb-lg-1 w-50">
+              <li class="nav-item fw-medium">
+                <a class="nav-link active" style="color: #f9cc48; " aria-current="page" href="{{ url_for('index') }}" >ABOUT</a>
+              </li>
+              <li class="nav-item fw-medium">
+                <a class="nav-link active" style="color: #f9cc48" href="{{ url_for('login_page') }}">GET STARTED</a>
+              </li>
+            </ul>
+      </nav>
+        <div class="container">
+            <h1>Mental Health and Wellness</h1>
+            <p>Empowering your mental well-being through knowledge, tips, and resources.</p>
+        </div>
+    </section>
+
+    <div class="container my-5 main-content">
+        <div class="row">
+            <div class="col-md-8">
+                <section class="section mb-4">
+                    <h2>Empowering Mental Health Awareness for College Students!</h2>
+                    <p>
+                        Our primary goal is to provide valuable resources, awareness, and support for mental health in college students in the Philippines. We understand the unique challenges faced by students during their transition to college life, including academic pressures, financial stress, and social adjustments. Our website offers information on counseling services, mental health awareness campaigns, and peer support programs, empowering students to prioritize their well-being.
+                        Explore our content to learn about mental health issues, discover available support resources, and connect with organizations that offer assistance. Together, we can build a compassionate and understanding community to promote mental wellness for all college students.
+                    </p>
+                </section>
+
+                <section class="section mb-4">
+                    <h2>Thriving in College: Your Mental Health Toolkit</h2>
+                    <ul>
+                        <li><strong>1. Talk to Someone:</strong> Reach out to friends, family, or a mentor when you’re feeling stressed or down. Sharing your thoughts and feelings can help lighten the load.</li>
+                        <li><strong>2. Plan Your Time:</strong> Balancing classes, homework, and free time can be tough. Make a schedule to manage your tasks and make sure you have time to relax.</li>
+                        <li><strong>3. Eat Well and Exercise:</strong> Taking care of your body with good food and regular exercise can have a big impact on your mental health.</li>
+                        <li><strong>4. Get Enough Sleep:</strong> Sleep is important for feeling good and thinking clearly. Try to get 7-9 hours a night.</li>
+                        <li><strong>5. Mindfulness Practices:</strong> Yoga, meditation, or deep breathing can help you relax and reduce stress.</li>
+                        <li><strong>6. Ask for Help:</strong> Many schools have counseling services. Don’t be afraid to reach out if you’re feeling overwhelmed.</li>
+                        <li><strong>7. Limit Stressful Situations:</strong> If something makes you feel stressed, try to avoid or manage it as best you can.</li>
+                        <li><strong>8. Learn to Manage Stress:</strong> Relaxation techniques like deep breathing or journaling can help calm your mind.</li>
+                        <li><strong>9. Stay Informed:</strong> Educating yourself about mental health and finding ways to cope can help you take care of yourself better.</li>
+                    </ul>
+                </section>
+            </div>
+            <aside class="col-md-4 sidebar">
+                <section class="section mb-4">
+                    <h2>Help Hotlines in the Philippines</h2>
+                    <ul>
+                        <li><strong class="hotline">National Center for Mental Health Crisis Hotline:</strong> 1553 (Luzon-wide landline toll-free), 0917-899-8727 (USAP) or 989-8727 (USAP)</li>
+                        <li><strong class="hotline">In Touch Community Services:</strong> 0917-572-2322, (02) 8893-7603</li>
+                        <li><strong class="hotline">Hopeline Philippines:</strong> 0917-558-4673, 0918-873-4673, (02) 8804-4673 (HOPE)</li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+    </div>
+
+    <div class="pagination">
+        <a href="{{ url_for('wellness_page3') }}">&laquo;</a>
+        <a href="{{ url_for('wellness_page') }}" class="active">1</a>
+        <a href="{{ url_for('wellness_page2') }}">2</a>
+        <a href="{{ url_for('wellness_page3') }}">3</a>
+        <a href="{{ url_for('wellness_page2') }}">&raquo;</a>
+    </div>
+
+    <footer class="footer bg-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Mental Health and Wellness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
